@@ -1,9 +1,10 @@
 #!/usr/bin/env python
+# automatedTest - nonexecutable base class
 
 class automatedTest(object):
 
-    def __init__(self):
-        pass
+    def __init__(self, **kargs):
+        print kargs
 
     def pre(self):
         print "PRETEST"
