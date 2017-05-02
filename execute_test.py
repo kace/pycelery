@@ -16,8 +16,6 @@ def load_test(testPath):
             if obj not in (automatedTest,):
                 if issubclass(obj,automatedTest):
                     return obj
-#            else:
-#                raise Exception("Base class automated_test cannot be run")
         except TypeError:
             pass
     raise Exception("No test present in %s" % (testPath))
