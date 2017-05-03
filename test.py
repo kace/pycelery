@@ -9,16 +9,16 @@ class test(automatedTest):
         self.timeWait=kargs['timeWait']
 
     def pre(self):
-        super(test, self).pre()
         time.sleep(self.timeWait)
+        super(test, self).pre()
 
     def run(self):
-        super(test, self).run()
         time.sleep(self.timeWait)
+        super(test, self).run()
 
     def post(self):
-        super(test, self).post()
         time.sleep(self.timeWait) 
+        super(test, self).post()
 
     def print_test(self):
         print "BASIC TEST"

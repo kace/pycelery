@@ -12,7 +12,7 @@ class automatedTest(object):
 
     def run(self):
         print "TEST"
-        pass
+        return True
 
     def post(self):
         print "POSTTEST"

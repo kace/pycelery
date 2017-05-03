@@ -13,6 +13,7 @@ class test2(automatedTest):
 
     def run(self):
         super(test2, self).run()
+        return True
 
     def post(self):
         super(test2, self).post()

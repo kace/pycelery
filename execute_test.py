@@ -36,5 +36,6 @@ def execute_test(testPath, **kargs):
     testClass = load_test(testPath)
     test = testClass(**kargs)
     test.pre()
-    test.run()
+    retval = test.run()
     test.post()
+    return retval
