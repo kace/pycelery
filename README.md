@@ -7,7 +7,7 @@ sudo pip install flower
 rabbitmq-plugins enable rabbitmq_management
 
 # Start a flower instance with persistence
-celery flower -A execute_test --bker=amqp://guest@localhost:5672// --persistent=True --db=flower.db
+celery flower -A execute_test --broker=amqp://guest@localhost:5672// --persistent=True --db=flower.db
 
 # Start a worker with 2 concurrent threads
 celery -A execute_test worker --loglevel=info -c 2

@@ -38,4 +38,9 @@ def execute_test(testPath, **kargs):
     test.pre()
     retval = test.run()
     test.post()
-    return retval
+    if retval == 'BLOCKED':
+        return 'BLOCKED'
+    elif retval == True:
+        return 'PASS'
+    elif retval == False:
+        return 'FAILED'
